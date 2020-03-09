@@ -7,7 +7,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "serve": "serve out/",
+    "del": "del /q ..\\giselletrithip.github.io\\ && for /D %d in (..\\giselletrithip.github.io\\*) do if '%d' neq '..\\giselletrithip.github.io\\.git' rd /s /q %d",
+    "copy": "npm run del && xcopy .\\out ..\\giselletrithip.github.io\\ /E /Q /Y"
   },
   "repository": {
     "type": "git",
@@ -21,12 +24,12 @@
   },
   "homepage": "https://github.com/giselletrithip/giselletrithip.github.io-website#readme",
   "dependencies": {
-    "bulma": "^0.8.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.2.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-markdown": "^4.3.1",
+    "serve": "^11.3.0",
     "swr": "^0.1.18"
   }
 }

@@ -1,4 +1,4 @@
-const Card = ({ image }) => {
+const Card = ({ image, caption }) => {
   return (
     <div className="card">
       <div className="header">
@@ -47,8 +47,7 @@ const Card = ({ image }) => {
           <p>
             <strong>32 Likes</strong>
           </p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-          iaculis mauris.
+          {caption}
           <a>@bulmaio</a>.<a href="#">#css</a>
           <a href="#">#responsive</a>
           <br />
@@ -57,7 +56,7 @@ const Card = ({ image }) => {
       </div>
       <div className="card-footer">
         <div className="columns is-mobile">
-          <div className="column is-11">
+          <div className="column is-10">
             <div className="field">
               <div className="control">
                 <input
@@ -68,13 +67,38 @@ const Card = ({ image }) => {
               </div>
             </div>
           </div>
-          <div className="column has-text-centered">
+          <div className="column">
             <button className="button">
               <i className="material-icons">more_horiz</i>
             </button>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+      .card {
+        margin-top: 1rem;
+      }
+      .card .header {
+        padding: 5px 10px;
+      }
+      .card-footer .columns {
+        width: 100%;
+      }
+      .card-footer .columns input {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .card-footer .columns .column:last-child {
+        display: flex;
+        align-items: flex-end;
+      }
+      .card-footer .columns .column:last-child button {
+        border: none;
+      }
+      `}</style>
+
     </div>
   );
 };

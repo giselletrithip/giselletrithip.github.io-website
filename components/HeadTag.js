@@ -9,7 +9,8 @@ const HeadTag = () => {
       <title>Giselle Trithip</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Pacifico&display=swap" rel="stylesheet" />
-
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+        
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
